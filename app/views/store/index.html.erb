@@ -1,0 +1,34 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+ 
+<h1>Hollywood Movie Catalog</h1>
+ 
+<% @movies.each do |movie| %>
+  <div class="entry">
+    <%= image_tag(movie.image_url) %>
+    <h3><%= movie.title %></h3>
+    <dd><%= truncate(strip_tags(movie.description),
+               length: 80) %></dd>
+   <!-- <%= sanitize(movie.description) %> -->
+    <div class="price_line">
+      <span class="price">Buy <%= number_to_currency(movie.buy) %></span> <br/>
+      <span class="price">Rent <%= number_to_currency(movie.rent) %></span>
+    </div>
+  </div>
+  <div class="row">
+  <!--<div class="small-2 large-2 columns">
+    <%= imdb_style_rating_for movie, current_user%>
+  </div> -->
+  <br>
+  <div class="small-2 large-4 columns">
+    <% if current_user %>
+      Visual Effects: <%= rating_for movie, "visual_effects" %>
+      <br>
+      Casting: <%= rating_for movie, "cast" %>
+      <br>
+      Custome Design: <%= rating_for movie, "costume_design" %>
+    <% end %>
+  </div>
+</div>
+<% end %>
