@@ -6,7 +6,7 @@ class CreateMovies < ActiveRecord::Migration
       t.text :description
       t.string :image_url
       t.decimal :buy , precision: 2, scale: 2
-      t.decimal :rent , precision: 1, scale: 2
+      t.decimal :rent , precision: 2, scale: 2
 
       t.timestamps null: false
     end

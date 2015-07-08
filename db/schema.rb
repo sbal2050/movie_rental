@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150708034954) do
     t.text     "description"
     t.string   "image_url"
     t.decimal  "buy",          precision: 2, scale: 2
-    t.decimal  "rent",         precision: 1, scale: 2
+    t.decimal  "rent",         precision: 2, scale: 2
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
   end

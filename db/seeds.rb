@@ -19,8 +19,8 @@ description:
   evolved beyond human logic. (C) Universal
   </p>}',
   image_url: 'lucy.jpg',
-  buy: 19.99,
-  rent: 3.99
+  buy: 15.99,
+  rent:13.99
   )
   
   #....
@@ -32,9 +32,9 @@ description:
   forces led by mortal-turned-god Xerxes and Artemisia, vengeful 
   commander of the Persian navy.
   </p>}',
-  image_url: '300.jpeg',
+  image_url: '300.jpg',
   buy: 19.99,
-  rent: 4.99
+  rent: 10.49
   )
   
   #....
@@ -45,9 +45,9 @@ description:
   when business tycoon and New York mayoral candidate Will Stacks makes 
   a thinly-veiled campaign move and takes her in.
   </p>}',
-  image_url: 'annie.jpeg',
+  image_url: 'annie.jpg',
   buy: 19.99,
-  rent: 5.99
+  rent: 15.99
   )
   
   

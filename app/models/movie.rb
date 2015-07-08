@@ -1,7 +1,8 @@
 class Movie < ActiveRecord::Base
   
   validates :title, :description, :image_url, :release_date, presence: true
-  validates :buy, :rent, numericality: {inclusion: 0.01...20}
+  validates :buy, numericality: {inclusion: 0.01...20}
+  validates :rent, numericality: {inclusion: 0.01...20}
   
   
   validates :title, uniqueness: true
